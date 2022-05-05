@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--human-readable text-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--maximum-scale limits user to zoom-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/51ff4837a4.js" crossorigin="anonymous"></script>
+    <title>Calculator App</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo-all">
+            <img class="logo-img" src="./images/javascript-logo.png" alt="logo-jascript" width=25px height="auto"/>
+            <h3 class="logo-name">JAVASCRIPT PROJECTS</h3>
+        </div>
+        <ul class="menu-items">
+            <li><a href="./home.html">Home</a></li>
+            <li>Projects</li>
+            <li>About Me</li>
+        </ul>
+    </nav>
+    <main>
+        <article class="main-calc">
+            <h1 class="title-calc">Calculator</h1>
+            <div class="display"> <span id="result-el"></span> </div>
+            <section class="container-calc">
+                <div class="signalright-btn">
+                    <button class="btn-calc" onclick="createSignal(`+`)">+ (add) </button>
+                    <button class="btn-calc" onclick="createSignal(`-`)">- (substract) </button>
+                    <button class="btn-calc" onclick="createSignal(`*`)">* (multiple) </button>
+                </div>
+                <div class="num-btn">
+                    <button class="btn-calc" onclick="numberButton(1)">1</button>
+                    <button class="btn-calc" onclick="numberButton(2)">2</button>
+                    <button class="btn-calc" onclick="numberButton(3)">3</button>
+                    <button class="btn-calc" onclick="numberButton(4)">4</button>
+                    <button class="btn-calc" onclick="numberButton(5)">5</button>
+                    <button class="btn-calc" onclick="numberButton(6)">6</button>
+                    <button class="btn-calc" onclick="numberButton(7)">7</button>
+                    <button class="btn-calc" onclick="numberButton(8)">8</button>
+                    <button class="btn-calc" onclick="numberButton(9)">9</button>
+                    <button class="btn-calc" onclick="clearAll()">CLEAR</button>
+                    <button class="btn-calc" onclick="numberButton(0)">0</button>
+                    <button class="btn-calc" onclick="result()">RESULT</button>
+                </div>
+                <div class="signalleft-btn">
+                    <button class="btn-calc" onclick="createSignal(`/`)">/ (divide) </button>
+                    <button class="btn-calc" onclick="createSignal(`**`)">** (exponen)</button>
+                    <button class="btn-calc" onclick="signalFac()">! (factorize) </button>
+                </div>
+            </section>
+            <div class="numb1">
+                <span id="num1-el"></span>
+            </div>
+            <div class="numb2">
+                <span id="num2-el"></span>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <ul class="social-contacts">
+            <li>
+                <a href="https://www.twitter.com">
+                    <i class="fab fa-linkedin"></i>
+            
+                    LinkedIn</a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com">
+                    <i class="fab fa-facebook"></i>
+
+                    Facebook</a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com">
+                    <i class="fab fa-github"></i>
+
+                    Github</a>
+            </li>
+            
+            <li>
+                <a href="https://www.twitter.com">
+                    <i class="fab fa-codepen"></i>
+
+                    CodePen</a>
+            </li>
+        </ul>
+        <h6 class="footer">&copy; 2022 Andre Barbosa</h6>
+        
+    </footer>
+    <script src="./index.js"></script>
+</body>
+
+</html>
